@@ -4,29 +4,97 @@
     <head>
         <title>РЕЗЮМЕ</title>
         <meta charset="utf-8">
+        <style>
+            #table_container
+            {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row-reverse;
+            }
+            #table_container > div
+            {
+                flex: 50%;
+
+            }
+        </style>
     </head>
     <body>
-      <table>
-          <tr>
-              <th>col1</th>
-              <th>col2</th>
-              <th>col3</th>
-          </tr>
-        <tr>
-            <td>1</td>
-            <td>2</th>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-        </tr>
-      </table>
+        <div id="table_container">
+            <div>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>col1</th>
+                        <th>col2</th>
+                        <th>col3</th>
+                    </tr>
+                    <tr>
+                        <th>row1</th>
+                        <td colspan="2">1</td>
+    
+                        <td rowspan="2">3</td>
+                    </tr>
+                    <tr>
+                        <th>row2</th>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <th>row3</th>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <th>col1</th>
+                        <th>col2</th>
+                        <th>col3</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</th>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                    </tr>
+                </table>
+           </div>
+           <div>
+                <table>
+                    <tr>
+                        <th>col1</th>
+                        <th>col2</th>
+                        <th>col3</th>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>20</th>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>40</td>
+                        <td>50</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>70</td>
+                        <td>80</td>
+                        <td>90</td>
+                    </tr>
+                </table>
+           </div>
+        </div>
     </body>   
 </html>
