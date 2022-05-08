@@ -16,9 +16,45 @@
                 flex: 50%;
 
             }
+            .select_me
+            {
+                background: rgb(100,120,140);
+                height: 5ex;
+                width: 50ex;
+            }
+            .select_me:hover
+            {
+                background: rgb(100,200,140);
+                height: 50ex;
+            }
+            
+            .hide
+            {
+                display: none;
+            }
+            .select_me:hover > .hide
+            {
+                display:block;
+            }
+
+            .line_even:nth-child(2)
+            {
+                background: rgb(200,200,140);
+            }
         </style>
     </head>
     <body>
+        <div>
+            <div class="select_me">
+                select me
+                <div class="hide line_even">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+            </div>
+        </div>
         <div id="table_container">
             <div>
                 <table>
