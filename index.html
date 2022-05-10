@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>РЕЗЮМЕ</title>
+        <title>My first site</title>
         <meta charset="utf-8">
         <style>
             #table_container
@@ -44,6 +44,7 @@
         </style>
     </head>
     <body>
+        <h1 id="header_1">header 1</h1>
         <div>
             <div class="select_me">
                 select me
@@ -132,5 +133,13 @@
                 </table>
            </div>
         </div>
+        <script>
+            //let header_1 = document.getElementById("header_1");
+            let header_1 = document.querySelector("h1");
+            let parent = header_1.parentElement;
+            let section = document.createElement("section");
+            section.innerHTML = "Inserted from js";
+            parent.insertBefore(section,header_1.nextSibling);
+        </script>
     </body>   
 </html>
